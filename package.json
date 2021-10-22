@@ -1,16 +1,18 @@
 {
   "name": "goit-js-hw-12",
   "version": "1.1.0",
-  "description": "",
+  "description": "Включите отображение скрытых файлов и папок в проводнике своей операционной системы, иначе вы не\r сможете выбрать и скопировать себе файлы настроек проекта, имена которых начинаются с точки.",
   "main": "index.js",
   "homepage": "https://github.com/LarysaTymoshenko/goit-js-hw-12",
   "scripts": {
+    "start": "parcel src/index.html --https",
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-12/"
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LarysaTymoshenko/goit-js-hw-12"
+    "url": "git+https://github.com/LarysaTymoshenko/goit-js-hw-12.git"
   },
   "keywords": [],
   "author": "Larysa Tymoshenko",
@@ -23,6 +25,16 @@
     "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.6.2",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "@pnotify/font-awesome5": "^5.2.0",
+"@pnotify/font-awesome5-fix": "^5.2.0",
+"pnotify": "^5.2.0"
+  },
+  "dependencies": {
+    "@pnotify/core": "^5.2.0",
+    "@pnotify/countdown": "^5.2.0",
+    "debounce": "^1.2.1",
+    "material-design-icon-fonts": "^3.0.1",
+"material-design-icons": "^3.0.1"
   }
 }
