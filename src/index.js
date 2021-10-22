@@ -2,7 +2,6 @@ import './sass/main.scss';
 import getCountry from './js/fetchCountry.js';
 import refs from './js/refs.js';
 const debounce = require('debounce');
-
 import { error, defaultModules } from '../node_modules/@pnotify/core/dist/PNotify.js';
 import '@pnotify/core/dist/PNotify.css';
 import '@pnotify/core/dist/BrightTheme.css';
