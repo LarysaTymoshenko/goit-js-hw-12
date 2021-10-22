@@ -4,12 +4,11 @@ import refs from './js/refs.js';
 const debounce = require('debounce');
 
 import { error, defaultModules } from '../node_modules/@pnotify/core/dist/PNotify.js';
-// import * as PNotifyMobile from '../node_modules/@pnotify/mobile/dist/PNotifyMobile.js';
 import '@pnotify/core/dist/PNotify.css';
 import '@pnotify/core/dist/BrightTheme.css';
 import * as PNotifyCountdown from '@pnotify/countdown';
 
-defaultModules.set(PNotifyMobile, { swipeDismiss: false });
+defaultModules.set(PNotifyCountdown , { swipeDismiss: false });
 
 function hideElement() {
   refs.countryInfo.style.display = 'none';
